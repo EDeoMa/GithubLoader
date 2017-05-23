@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/git_scale"
+        android:layout_height="@dimen/git_scale"
+        tools:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/git_margin"
+        />
+
+    <TextView
+        android:id="@+id/user_fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/avatar"
+        tools:text="Dmitry Kudryavtsev"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/name_margin"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_fullname"
+        tools:text="EDeoMa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/name_margin"/>
+
+    <TextView
+        android:id="@+id/repo_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        tools:text="https://github.com/EDeoMa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/name_margin"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/repo_url"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/pub_repos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Public repos"
+        android:layout_marginTop="@dimen/name_margin"/>
+
+    <TextView
+        android:id="@+id/pub_repos_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/pub_repos"
+        tools:text="7"
+        android:layout_marginTop="@dimen/name_margin"
+        android:layout_marginStart="@dimen/mini_margin"
+        android:layout_toRightOf="@id/pub_repos"
+        android:layout_marginLeft="@dimen/mini_margin" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/pub_gists"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stars"
+            android:layout_marginTop="@dimen/name_margin"/>
+
+        <TextView
+            android:id="@+id/pub_gists_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pub_gists"
+            android:layout_toEndOf="@id/pub_gists"
+            tools:text="0"
+            android:layout_marginTop="@dimen/name_margin"
+            android:layout_marginStart="@dimen/mini_margin"
+            android:layout_marginLeft="@dimen/mini_margin" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+    <TextView
+        android:id="@+id/followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Followers"
+        android:layout_marginTop="@dimen/name_margin"/>
+
+    <TextView
+        android:id="@+id/followers_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/followers"
+        android:layout_toEndOf="@id/followers"
+        tools:text="2"
+        android:layout_marginTop="@dimen/name_margin"
+        android:layout_marginStart="@dimen/mini_margin"
+        android:layout_marginLeft="@dimen/mini_margin" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+    <TextView
+        android:id="@+id/following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Following"
+        android:layout_marginTop="@dimen/name_margin"/>
+
+    <TextView
+        android:id="@+id/following_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/following"
+        android:layout_toEndOf="@id/following"
+        tools:text="0"
+        android:layout_marginTop="@dimen/name_margin"
+        android:layout_marginStart="@dimen/mini_margin"
+        android:layout_marginLeft="@dimen/mini_margin" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+</RelativeLayout>

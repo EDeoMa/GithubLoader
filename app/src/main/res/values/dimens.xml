@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="git_scale">84dp</dimen>
+    <dimen name="git_margin">42dp</dimen>
+    <dimen name="name_margin">10dp</dimen>
+    <dimen name="mini_margin">7dp</dimen>
+</resources>
