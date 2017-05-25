@@ -10,14 +10,17 @@ import android.content.Context;
 public class UserLoader extends AsyncTaskLoader<GithubUser> {
 
     private GithubUser cachedUser;
+    public final String username;
 
-    public UserLoader(Context context) {
+    public UserLoader(Context context, String username) {
         super(context);
+        this.username=username;
     }
 
     @Override
     public GithubUser loadInBackground() {
-        return null;
+        GithubUser user  = DownloadInfo.downloadUserInfo(username);
+        return user;
     }
 
     @Override
@@ -29,7 +32,7 @@ public class UserLoader extends AsyncTaskLoader<GithubUser> {
     @Override
     protected void onStartLoading() {
         super.onStartLoading();
-        if(cachedUser==null)
+        //if(cachedUser==null)
           forceLoad();
     }
 }

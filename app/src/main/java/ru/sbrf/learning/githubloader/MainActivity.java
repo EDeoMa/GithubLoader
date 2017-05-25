@@ -22,7 +22,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ViewActivity.class);
-                intent.putExtra(getString(R.string.passed_string), inputText.getText());
+                intent.putExtra(getString(R.string.passed_string), inputText.getText().toString());
                 startActivity(intent);
             }
         });

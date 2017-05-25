@@ -1,5 +1,7 @@
 package ru.sbrf.learning.githubloader;
 
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 
 /**
@@ -16,7 +18,9 @@ public class GithubUser {
     private int stars;
     private Drawable icon;
 
-    public GithubUser(String username, String fullname, String repoUrl, int followers, int following, int repos, int stars, Drawable icon) {
+    public GithubUser(){};
+
+    public GithubUser(String username, String fullname, String repoUrl, int followers, int following, int repos, int stars, BitmapDrawable icon) {
         this.username = username;
         this.fullname = fullname;
         this.repoUrl = repoUrl;
